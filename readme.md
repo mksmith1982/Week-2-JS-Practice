@@ -1,0 +1,1 @@
+This is a readme for the JS practice.  This was an assignment we did in week two of front end.
