@@ -55,39 +55,42 @@ function maxOfThree(x,y,z){
 // ---------------------
 	
 
-		function isVowel(string) {
-			var character = string.toLowerCase();
-			var vowels = ["a","e","i","o","u"];
-			if (vowels.includes(character)) {return true}
-				else {return false};
-		}
+function isVowel(string) {
+	var character = string.toLowerCase();
+	var vowels = ["a","e","i","o","u"];
+	if (vowels.includes(character)) {
+		return true;
+	} else {
+		return false;
+	} 
+}
 
-
-
-
-		
-	
-
-
-
-  
 
 // ---------------------
 // Write a function translate() that will translate a text into "Rovarspraket". That is, double every consonant and place an occurrence of "o" in between. For example, translate("this is fun") should return the string "tothohisos isos fofunon".
 // ---------------------
 
-function translate(phrase) {
-	var consonants = ["b","c","d","f","g","h","j","k","l","m","n","p","q","r","s","t","v","w","x","y","z"]
-		for (var i = 0; i < phrase.length; i++)		
-		consonants[i]; 
-
-		if (consonants.includes(phrase)) 
-			{return (consonants * consonants ) &&  ("o" + consonants + "o")};	
-		 
-			 
-	}
- 
 	
+
+
+function translate(word) {
+ 	var vowels = ["a","e","i","o","u"];                         
+ 	var input = word.toLowerCase();
+ 	var result = "";
+ 	
+ 	for (var i = 0; i < word.length; i++){
+ 		var letter = input[i];
+ 		if ((isVowel(letter)) || (letter === " ")){
+ 			result = result + letter;
+ 		} else {
+ 			result = result + letter + "o" + letter;
+ 		}
+
+	}
+ 		return result;
+ 	};
+
+
 // var vowels = ["a","e","i","o","u"];
 
 // ---------------------
@@ -95,5 +98,7 @@ function translate(phrase) {
 // ---------------------
 
 function reverse(x){
-    return x.split("").reverse().join("");
+	var answer = "";
+
+	return answer;
 }
