@@ -97,8 +97,10 @@ function translate(word) {
 // Define a function reverse() that computes the reversal of a string. For example, reverse("jag testar") should return the string "ratset gaj".
 // ---------------------
 
-function reverse(x){
-	var answer = "";
-
-	return answer;
+function reverse(string) {
+  var result = '';
+  for (var i = string.length - 1; i >= 0; i--)
+    result += string[i];
+  return result;
 }
+
